@@ -1,0 +1,2 @@
+use will call require along with __using__ macro.
+So it will extend the macros along with running code from __using__ 

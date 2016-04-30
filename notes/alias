@@ -1,0 +1,4 @@
+Just alias a Module
+
+alias Module.Nest => Nest.function
+alias Module.Nest, as: M => M.function

@@ -1,0 +1,14 @@
+Bring Macros and functions into a give module
+
+define module A
+  define function FA do
+    1 + 1
+  end
+end
+
+define module B
+  import A
+  # notice here that FA can be directly called without refering to A
+  # the same will happen to Macros
+  FA => 2 
+end

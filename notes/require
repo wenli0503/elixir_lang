@@ -1,0 +1,19 @@
+Like C/C++, require will replace all the calls to a Macro into codes
+
+##A.ex
+define module A
+  define micro M do
+    1 + 1
+  end
+end
+
+##B.ex
+define module B
+  require A
+  A.M
+end
+
+When compile the above program, you will see:
+define module B
+  1 + 1 => Expended by A.M
+end
